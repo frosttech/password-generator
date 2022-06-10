@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Link JQuery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Link Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main class="page-content" id="page-content">
+        <div class="modal" id="modal">
+        <!--
+            <div class="modal-content" id="length-content">
+                
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <span class="close col-1" id="length-span">&times;</span>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">Please enter your desired password length.</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <textarea wrap="off" maxlength="3" rows="1" cols="3" id="slider-value" class="col-2 text-center slider-value"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center" id="length-error"></div>
+                    </div>
+                    
+                    <div class="slidecontainer row justify-content-center">
+                        <div class="col-2 slider-range">Min: 8</div>
+                        <input type="range" min="8" max="128" value="8" class="slider col-3" id="length-slider">
+                        <div class="col-2 slider-range">Max: 128</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="btn modal-btn col-3" id="next-btn">NEXT</div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="modal-content container" id="chartype-content">
+                <span class="close" id="chartype-span">&times;</span>
+                <p>Character Type Modal Content.</p>
+                <div class="btn modal-btn" id="finish-btn">FINISH</div>
+            </div>
+        -->
+        </div>
+        <div class="wrapper">
+            <header>
+            <h1>Password Generator</h1>
+            </header>
+            <div class="card">
+            <div class="card-header" id="card-header"">
+                <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+                <textarea
+                readonly
+                id="password"
+                placeholder="Your Secure Password"
+                aria-label="Generated Password"
+                ></textarea>
+            </div>
+            <div class="card-footer">
+                <button id="generate" class="btn">Generate Password</button>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Add Custom JS Script -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
